@@ -1,0 +1,7 @@
+services:
+  app:
+    build: .
+    volumes:
+      - ./Resources:/app/Resources
+    environment:
+      - DISCORD_WEBHOOK_URL=${DISCORD_WEBHOOK_URL}
